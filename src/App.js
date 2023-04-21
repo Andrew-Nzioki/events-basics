@@ -1,22 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+//working onClick, onChange, onSubmit react events
 function App() {
+  const handleClick=(event)=>{
+    event.preventDefault()
+    alert('did you just lick me!')
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h3>React events</h3>
+        <button onClick={handleClick}>Click me</button>
       </header>
     </div>
   );
