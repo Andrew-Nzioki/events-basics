@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import Count from "./components/Count"
 import Liker from "./components/Liker"
 import FormInput from "./components/FormInput"
+import TodoList from "./components/TodoList"
 //working onClick, onChange, onSubmit react events
 function App() {
   
@@ -14,9 +15,11 @@ function App() {
   return (
     <div className="App">
       <Login />
-      <Count/>
+      {/* <Count/>
       <Liker/>
-      <FormInput/>
+      <FormInput/> */}
+
+      <TodoList/> 
       {/* <header className="App-header">
         <h3>React events</h3>
         <button onClick={handleClick}>Click me</button>
